@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		GertiesBakeshop
+	</title>
+	<script src="scripts.js"></script>
+	<script type="text/javascript">
+		// When the user clicks on the button, open the modal
+		function btnCheckout() {
+		  document.getElementById("CheckoutBox").style.display = 'block';
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function Close() {
+		  document.getElementById("CheckoutBox").style.display = 'none';
+		}
+
+		function btnallproducts(){
+			document.getElementById("div1").style.display = 'block';
+			document.getElementById("div2").style.display = 'block';
+			document.getElementById("div3").style.display = 'block';
+			document.getElementById("div4").style.display = 'block';
+		}
+		function btnbread(){
+			document.getElementById("div1").style.display = 'block';
+			document.getElementById("div2").style.display = 'none';
+			document.getElementById("div3").style.display = 'none';
+			document.getElementById("div4").style.display = 'none';
+		}
+		function btncakes(){
+			document.getElementById("div1").style.display = 'none';
+			document.getElementById("div2").style.display = 'block';
+			document.getElementById("div3").style.display = 'none';
+			document.getElementById("div4").style.display = 'none';
+		}
+		function btnnoodles(){
+			document.getElementById("div1").style.display = 'none';
+			document.getElementById("div2").style.display = 'none';
+			document.getElementById("div3").style.display = 'block';
+			document.getElementById("div4").style.display = 'none';
+		}
+		function btndishes(){
+			document.getElementById("div1").style.display = 'none';
+			document.getElementById("div2").style.display = 'none';
+			document.getElementById("div3").style.display = 'none';
+			document.getElementById("div4").style.display = 'block';
+		}
+		//modal box
+
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<div class="Myblog"><img src="Pictures/logo.png"></div>
+	<div class="parallax">
+		<div class="parallax__group">
+			<div class="parallax__layer parallax__layer--back">
+
+				<div class="modal" id="CheckoutBox">
+				  <div class="modal-content">
+				    <button onclick="Close()">X</button>
+				    sample laanggg
+				  </div>
+
+				</div>
+				<div class="table1">
+					<table>
+						<tr><td><button onclick="btnallproducts()">View all products</button></td></tr>
+						<tr><td><button onclick="btnbread()">BREADS</button></td></tr>
+						<tr><td><button onclick="btncakes()">CAKES</button></td></tr>
+						<tr><td><button onclick="btnnoodles()">NOODLES</button></td></tr>
+						<tr><td><button onclick="btndishes()">DISHES</button></td></tr>
+						<tr><td><button onclick="btnCheckout()">Check my cart</button></td></tr>
+					</table>
+					</br>
+					<textarea id="View Cart">Orders</textarea>
+					<p>Transaction number:</p>
+				</div>
+				<div class="margin">
+					<div class="table2" id="div1">
+						<h2>Bread</h2>
+						<table >
+							<tr>
+								<td><img src="Pictures/Products/Breads/brownies.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/butter toast.jpg"><br/><b>Butter Toast</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cheesebar.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/cheesebread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cheesecake.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/chocobar.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/chococrinkles.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cinnamonbread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/creambread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/eggpie.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/Empanada.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/garlicstick.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>	
+						</table>
+					</div>
+
+					<div class="table3" id="div2">	
+						<h2>Cakes</h2>
+						<table >
+							<tr>
+								<td><img src="Pictures/Products/Cakes/applepie.jpg"><br/><b>Apple Pie</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/blackforest.jpg"><br/><b>Black Forest</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/Brazo de Mercedes.jpg"><br/><b>Brazo de Mercedes</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Cakes/Buko Pie.jpg"><br/><b>Buko Pie</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/Caramel Roll.jpg"><br/><b>Caramel Roll</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/Cassava Cake.jpg"><br/><b>Cassava Cake</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Cake/Chocolate Roll.jpg"><br/><b>Chocolate Roll</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/Creme de Fruta.jpg"><br/><b>Creme de Fruta</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/eggpie.jpg"><br/><b>Egg Pie</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Cakes/lecheflan.jpg"><br/><b>Leche Flan</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/moistchocolate.jpg"><br/><b>Moist Chocolate</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Cakes/sansrival.jpg"><br/><b>Sansrival</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table4" id="div3">
+						<h2>Noodles</h2>
+						<table >
+							<tr>
+								<td><img src="Pictures/Products/Breads/brownies.jpg"><br/><b>kevin</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/butter toast.jpg"><br/><b>Butter Toast</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cheesebar.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/cheesebread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cheesecake.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/chocobar.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/chococrinkles.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cinnamonbread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/creambread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/eggpie.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/Empanada.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/garlicstick.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table5" id="div4">
+						<h2>Dishes</h2>
+						<table >
+							<tr>
+								<td><img src="Pictures/Products/Breads/brownies.jpg"><br/><b>paul</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/butter toast.jpg"><br/><b>Butter Toast</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cheesebar.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/cheesebread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cheesecake.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/chocobar.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/chococrinkles.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/cinnamonbread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/creambread.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+
+							<tr>
+								<td><img src="Pictures/Products/Breads/eggpie.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/Empanada.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+								<td><img src="Pictures/Products/Breads/garlicstick.jpg"><br/><b>Brownies</b><br/>₱13.50<br>QUANTITY:<input type="number" min="0"><button>ADD TO CART</button></td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+</body>
+</html>
